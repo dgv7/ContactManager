@@ -10,10 +10,13 @@
 		DB53FD502C49F1F900C0F68C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53FD4F2C49F1F900C0F68C /* AppDelegate.swift */; };
 		DB53FD522C49F1F900C0F68C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53FD512C49F1F900C0F68C /* SceneDelegate.swift */; };
 		DB53FD542C49F1F900C0F68C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53FD532C49F1F900C0F68C /* ViewController.swift */; };
-		DB53FD572C49F1F900C0F68C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DB53FD562C49F1F900C0F68C /* Base */; };
 		DB53FD5A2C49F1F900C0F68C /* ContactManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB53FD582C49F1F900C0F68C /* ContactManager.xcdatamodeld */; };
 		DB53FD5C2C49F1FA00C0F68C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB53FD5B2C49F1FA00C0F68C /* Assets.xcassets */; };
 		DB53FD5F2C49F1FA00C0F68C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DB53FD5E2C49F1FA00C0F68C /* Base */; };
+		DB53FD672C49F39700C0F68C /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53FD662C49F39700C0F68C /* ContactListViewController.swift */; };
+		DB53FD692C49F3AA00C0F68C /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53FD682C49F3AA00C0F68C /* AddContactViewController.swift */; };
+		DB53FD6B2C49F3CE00C0F68C /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53FD6A2C49F3CE00C0F68C /* ContactTableViewCell.swift */; };
+		DB53FD702C49F41700C0F68C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53FD6F2C49F41700C0F68C /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +24,14 @@
 		DB53FD4F2C49F1F900C0F68C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB53FD512C49F1F900C0F68C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DB53FD532C49F1F900C0F68C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB53FD562C49F1F900C0F68C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB53FD592C49F1F900C0F68C /* ContactManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactManager.xcdatamodel; sourceTree = "<group>"; };
 		DB53FD5B2C49F1FA00C0F68C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB53FD5E2C49F1FA00C0F68C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB53FD602C49F1FA00C0F68C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB53FD662C49F39700C0F68C /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		DB53FD682C49F3AA00C0F68C /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		DB53FD6A2C49F3CE00C0F68C /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		DB53FD6F2C49F41700C0F68C /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,43 @@
 		DB53FD4E2C49F1F900C0F68C /* ContactManager */ = {
 			isa = PBXGroup;
 			children = (
+				DB53FD6C2C49F3D700C0F68C /* ViewController */,
+				DB53FD6D2C49F3F500C0F68C /* View */,
+				DB53FD6E2C49F3FD00C0F68C /* Model */,
 				DB53FD4F2C49F1F900C0F68C /* AppDelegate.swift */,
 				DB53FD512C49F1F900C0F68C /* SceneDelegate.swift */,
 				DB53FD532C49F1F900C0F68C /* ViewController.swift */,
-				DB53FD552C49F1F900C0F68C /* Main.storyboard */,
 				DB53FD5B2C49F1FA00C0F68C /* Assets.xcassets */,
 				DB53FD5D2C49F1FA00C0F68C /* LaunchScreen.storyboard */,
 				DB53FD602C49F1FA00C0F68C /* Info.plist */,
 				DB53FD582C49F1F900C0F68C /* ContactManager.xcdatamodeld */,
 			);
 			path = ContactManager;
+			sourceTree = "<group>";
+		};
+		DB53FD6C2C49F3D700C0F68C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DB53FD662C49F39700C0F68C /* ContactListViewController.swift */,
+				DB53FD682C49F3AA00C0F68C /* AddContactViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DB53FD6D2C49F3F500C0F68C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB53FD6A2C49F3CE00C0F68C /* ContactTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB53FD6E2C49F3FD00C0F68C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB53FD6F2C49F41700C0F68C /* Contact.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +163,6 @@
 			files = (
 				DB53FD5C2C49F1FA00C0F68C /* Assets.xcassets in Resources */,
 				DB53FD5F2C49F1FA00C0F68C /* Base in Resources */,
-				DB53FD572C49F1F900C0F68C /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB53FD542C49F1F900C0F68C /* ViewController.swift in Sources */,
+				DB53FD672C49F39700C0F68C /* ContactListViewController.swift in Sources */,
 				DB53FD502C49F1F900C0F68C /* AppDelegate.swift in Sources */,
+				DB53FD692C49F3AA00C0F68C /* AddContactViewController.swift in Sources */,
+				DB53FD702C49F41700C0F68C /* Contact.swift in Sources */,
+				DB53FD6B2C49F3CE00C0F68C /* ContactTableViewCell.swift in Sources */,
 				DB53FD5A2C49F1F900C0F68C /* ContactManager.xcdatamodeld in Sources */,
 				DB53FD522C49F1F900C0F68C /* SceneDelegate.swift in Sources */,
 			);
@@ -151,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB53FD552C49F1F900C0F68C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB53FD562C49F1F900C0F68C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB53FD5D2C49F1FA00C0F68C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,7 +329,6 @@
 				INFOPLIST_FILE = ContactManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +356,6 @@
 				INFOPLIST_FILE = ContactManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
